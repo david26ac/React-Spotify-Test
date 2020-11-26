@@ -1,0 +1,140 @@
+@import '../css/variables.scss';
+
+h2{
+    color: $white;
+    font-size: 3em;
+}
+main{
+    padding: 20px 0;
+    height: 50vh;
+    overflow: scroll;
+}
+.ver_artist{
+    background-color: $red;
+    color: $white;
+    border-radius: 10px;
+    padding: 2px 15px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.8em;
+    border: 2px solid $red;
+    transition: 0.2s;
+}
+.ver_artist:hover{
+    background-color: transparent;
+    color: $white;
+}
+.content_artist{
+    padding: 10px;
+    transition: 0.2s;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #4a4949;
+
+    .artist{
+        color: $red;
+        margin-bottom: 0;
+    }
+    .info_artist{
+        color: $white;
+        width: 100%;
+        text-align: left;
+        p{
+            margin: 0;
+            font-size: 0.7em;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    .generos{
+        color: $white;
+        width: 150px;
+        p{
+            text-align: right;
+            line-height: 1em;
+        }
+    }
+    .genero{
+        font-size: 0.8em;
+        margin: 0 0px 0 5px;
+    }
+
+}
+.albums{
+    padding: 0;
+    .album{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        a{
+            text-decoration: none;
+        }
+        p{
+            color: $white;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 0.8em;
+        }
+        span{
+            font-size: 0.7em;
+            color: $red;
+        }
+        img:hover{
+            transition: 0.2s;
+            opacity: 0.8;
+        }
+        .tracks{
+            margin: 0;
+            font-size: 0.7em;
+            span{
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.card{
+    background-color: transparent;
+    .card-header{
+        padding: 0;
+        margin: 0;
+        button{
+            outline: 0;
+            border: none;
+        }
+        button:focus{
+            background-color: #1f1f1f;
+            border: none;
+            color: $white;
+            outline: 0;
+            box-shadow: none;
+            text-decoration: none;
+        }
+        button:hover{
+            text-decoration: none;
+        }
+    }
+    .card-body {
+        display: block;
+        min-height: 0;
+        padding: 0;
+    }
+    button{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.content_artist:hover{
+    background-color: #1f1f1f;
+}
+.container{
+    width: auto;
+    max-width: 100%;
+}
