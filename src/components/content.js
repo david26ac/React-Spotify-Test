@@ -5,7 +5,7 @@ import Main from './main';
 import Carousel from 'react-bootstrap/Carousel';
 
 import '../css/content.scss'
-
+import key from '../key/key'
 class content extends React.Component{
     constructor(props){
         super(props);
@@ -27,7 +27,7 @@ class content extends React.Component{
         //Get Token
         Axios('https://accounts.spotify.com/api/token',{
             headers : {
-                'Authorization' : 'Basic ' + btoa('8968861e742a4d3abd77147e67371983' + ':' + '6c5757156c9b430aae5d0f9998b054be'),
+                'Authorization' : 'Basic ' + btoa(key),
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             data : 'grant_type=client_credentials',
